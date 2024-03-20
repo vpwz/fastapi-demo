@@ -35,6 +35,11 @@ def multiply_this_stuff(num1,num2,num3):
     product = num1+num2+num3
     return {"product": product}
 
+@app.get("/foo/{num1}/{num2}/{num3}")
+def foo_this_stuff(num1,num2,num3):
+    product = num1*num2+num3
+    return {"foo": product}
+
 ## Parameters
 # Introduce parameter data types and defaults from the Optional library
 @app.get("/items/{item_id}")
