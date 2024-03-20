@@ -24,10 +24,10 @@ def read_root():
 # 
 # Simple GET method demo
 # Adds two integers as PATH parameters
-@app.get("/add/{number_1}/{number_2}")
+@app.get("/add/{number_1}/{number_2}") #t
 def add_me(number_1: int, number_2: int):
     sum = number_1 + number_2
-    return {"sum": sum}
+    return {"sum": sum} 
 
 # Let's develop a new one:
 @app.get("/multiply/{num1}/{num2}/{num3}")
