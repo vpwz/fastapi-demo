@@ -9,6 +9,7 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.actor }}/fastapi-demo
   IMAGE_TAG: 1.${{ github.run_number }} # GITHUB_RUN_NUMBER
+  # RANDOM_NUMBER: 1515115
 
 jobs:
   build:
